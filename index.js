@@ -3,7 +3,19 @@ var scriptName = 'netflix-autocontinue';
 console.log(scriptName, 'script injected');
 
 if (~window.location.href.indexOf('netflix.com/watch/')) {
+  runLogic();
+} else {
+  console.log(scriptName, 'initial page is not a /watch/ page, netflix is dynamic, every 10s check the URL');
+  var checkUrlInterval = setInterval(function(){
+    if (~window.location.href.indexOf('netflix.com/watch/')) {
+      clearInterval(checkUrlInterval);
+      runLogic();
+    }
+  }, 10000);
+}
 
+
+function runLogic() {
   var duration = 5000;
   console.log(scriptName, duration, 'interval (loop) started');
 
@@ -35,6 +47,5 @@ if (~window.location.href.indexOf('netflix.com/watch/')) {
       console.log(scriptName, 'clicking. Case: end of episode, 15s countdown');
       autoplay2.click();
     }
-
   }, duration);
 }

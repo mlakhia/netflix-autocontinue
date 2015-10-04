@@ -5,7 +5,7 @@
   "version": "1.0",
   "content_scripts": [{
     "matches": [
-      "http://www.netflix.com/watch/*"
+      "http://www.netflix.com/*"
     ],
     "js": ["index.js"]
   }],
