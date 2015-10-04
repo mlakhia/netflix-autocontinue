@@ -9,10 +9,11 @@ if (~window.location.href.indexOf('netflix.com/watch/')) {
 
   setInterval(function() {
 
-    // middle modal that pops up while playing
+    // while watching - small dark square popup/modal with 3 options
     var btnSelector = '.show-autoplay-interrupter button';
     var btn = document.querySelector(btnSelector);
     if (btn) {
+      console.log(scriptName, 'selector found', btnSelector, btn);
       console.log(scriptName, 'script executing -');
       btn.click();
     }

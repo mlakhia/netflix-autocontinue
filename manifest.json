@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "AutoContinue Netflix",
-  "description": "AutoContinue when watching Netflix. Clicks continue for you when the black popup with 3 options shows up while watching ('Click to continue watching'). Will also click continue for you at the end of an episode when the next episode is available to play (both screens: the 15s countdown + 'Click to play next episode')",
+  "name": "Netflix AutoContinue",
+  "description": "AutoContinue when watching Netflix. Chrome extension that clicks Continue for you in most cases when Netflix decides to pause or inhibit you from watching seamlessly.",
   "version": "1.0",
   "content_scripts": [{
     "matches": [
