@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Netflix AutoContinue",
-  "description": "AutoContinue when watching Netflix. Chrome extension that clicks Continue for you in most cases when Netflix decides to pause or inhibit you from watching seamlessly.",
+  "description": "AutoContinue when watching Netflix. Chrome extension that clicks Continue for you when Netflix decides to pause or inhibit you from watching seamlessly.",
   "version": "1.0",
   "content_scripts": [{
     "matches": [
